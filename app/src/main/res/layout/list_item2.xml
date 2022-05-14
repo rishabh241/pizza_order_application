@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/list_back">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imagee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        android:clipToOutline="true"
+        android:outlineAmbientShadowColor="@color/black"
+        android:scaleType="fitXY"
+        android:src="@drawable/pizzzzza"></com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Price"
+        android:layout_alignLeft="@+id/imagee"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="normal"
+        android:padding="2dp"
+        android:layout_alignBottom="@id/imagee"
+        android:gravity="bottom"
+        android:text="₹699"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pizzaNamee"
+        android:text="Pizza Name"
+        android:layout_below="@+id/imagee"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descr"
+        android:layout_marginTop="3dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        android:layout_below="@+id/pizzaNamee"
+        android:textColor="@color/black"
+       android:layout_marginLeft="10dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="3dp"
+        />
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/sizeLay"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_below="@id/descr">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Size"-->
+<!--            android:textSize="8dp"-->
+<!--            android:paddingBottom="2dp"-->
+<!--            android:paddingTop="2dp"-->
+<!--            android:paddingEnd="10sp"-->
+<!--            android:paddingLeft="10sp"/>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:id="@+id/InputSize"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:inputType="none"-->
+<!--                android:paddingLeft="10sp"-->
+<!--                android:text="Small"-->
+<!--                android:textSize="10sp" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_below="@+id/descr"-->
+<!--        android:layout_toRightOf="@+id/sizeLay"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Crusts"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:paddingRight="10dp"-->
+<!--            android:paddingTop="2dp"-->
+<!--            android:paddingBottom="2dp"-->
+<!--            android:textSize="8dp"/>-->
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/inputCrust">-->
+<!--            <AutoCompleteTextView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:inputType="none"-->
+<!--                android:text="Hand-tossed"-->
+<!--                android:textSize="10sp"-->
+<!--                />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+
+
+</RelativeLayout>
